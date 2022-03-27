@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name" translatable="false">CurrencyConverter</string>
+
+    <string name="cad_currency" translatable="false">Канадский доллар</string>
+    <string name="hkd_currency" translatable="false">Гонконгский доллар</string>
+    <string name="eur_currency" translatable="false">Евро</string>
+    <string name="rub_currency" translatable="false">Рубль</string>
+    <string name="usd_currency" translatable="false">Доллар США</string>
+    <string name="isk_currency" translatable="false">Исландская крона</string>
+    <string name="php_currency" translatable="false">Филиппинский песл</string>
+    <string name="dkk_currency" translatable="false">Датская крона</string>
+    <string name="huf_currency" translatable="false">Венгерский форинт</string>
+    <string name="czk_currency" translatable="false">Чешская крона</string>
+    <string name="aud_currency" translatable="false">Австралийский доллар</string>
+    <string name="ron_currency" translatable="false">Румынский лей</string>
+    <string name="sek_currency" translatable="false">Шведская крона</string>
+    <string name="idr_currency" translatable="false">Индонезийская рупия</string>
+    <string name="inr_currency" translatable="false">Индийская рупия</string>
+    <string name="brl_currency" translatable="false">Бразильский реал</string>
+    <string name="hrk_currency" translatable="false">Хорватская куна</string>
+    <string name="jpy_currency" translatable="false">Японская йена</string>
+    <string name="thb_currency" translatable="false">Тайский бат</string>
+    <string name="chf_currency" translatable="false">Швейцарский франк</string>
+    <string name="sgd_currency" translatable="false">Сингапурский доллар</string>
+    <string name="pln_currency" translatable="false">Польский злотый</string>
+    <string name="bgn_currency" translatable="false">Болгарский лев</string>
+    <string name="try_currency" translatable="false">Турецкая лира</string>
+    <string name="cny_currency" translatable="false">Китайский юань</string>
+    <string name="nok_currency" translatable="false">Норвежская крона</string>
+    <string name="nzd_currency" translatable="false">Новозеландский доллар</string>
+    <string name="zar_currency" translatable="false">Южноафриканский рэнд</string>
+    <string name="mxn_currency" translatable="false">Мексиканский песо</string>
+    <string name="ils_currency" translatable="false">Израильский шекель</string>
+    <string name="gbp_currency" translatable="false">Фунт стерлингов</string>
+    <string name="krw_currency" translatable="false">Южнокорейская вона</string>
+    <string name="myr_currency" translatable="false">Малазийский рингит</string>
+
+
+    <string name="EXCHANGE_API_KEY" translatable="false">4438e0d7a2c3a4de1545d68c119f2fc5</string>
+    <string name="aed_currency" translatable="false">Дирхам ОАЭ</string>
+    <string name="afn_currency" translatable="false">Афганский афгани</string>
+    <string name="all_currency" translatable="false">Албанский лек</string>
+    <string name="amd_currency" translatable="false">Армянский драм</string>
+    <string name="ang_currency" translatable="false">"Нидерландский антильский гульден "</string>
+    <string name="aoa_currency" translatable="false">Ангольская кванза</string>
+    <string name="ars_currency" translatable="false">Аргентинское песо</string>
+    <string name="awg_currency" translatable="false">Арубанский флорин</string>
+    <string name="azn_currency" translatable="false">Азербайджанский манат</string>
+    <string name="bam_currency" translatable="false">Конвертируемая марка Боснии</string>
+    <string name="bbd_currency" translatable="false">Барбадосский доллар</string>
+    <string name="bdt_currency" translatable="false">Бангладешская така</string>
+    <string name="bhd_currency" translatable="false">Бахрейнский динар</string>
+    <string name="bif_currency" translatable="false">Бурундийский франк</string>
+    <string name="bmd_currency" translatable="false">Бермудский доллар</string>
+    <string name="bnd_currency" translatable="false">Брунейский доллар</string>
+    <string name="bob_currency" translatable="false">Боливийский боливиано</string>
+    <string name="bsd_currency" translatable="false">Багамский доллар</string>
+    <string name="btc_currency" translatable="false">Биткойн</string>
+    <string name="btn_currency" translatable="false">Бутанский нгултрум</string>
+    <string name="bwp_currency" translatable="false">Ботсванская пула</string>
+    <string name="byn_currency" translatable="false">Новый белорусский рубль</string>
+    <string name="byr_currency" translatable="false">Белорусский рубль</string>
+    <string name="bzd_currency" translatable="false">Белизский доллар</string>
+    <string name="cdf_currency" translatable="false">Конголезский франк</string>
+    <string name="clf_currency" translatable="false">"Условная расчетная единица Чили "</string>
+    <string name="clp_currency" translatable="false">Чилийское песо</string>
+    <string name="cop_currency" translatable="false">Колумбийское песо</string>
+    <string name="crc_currency" translatable="false">Коста-риканский колон</string>
+    <string name="cuc_currency" translatable="false">Кубинское конвертируемое песо</string>
+    <string name="cup_currency" translatable="false">Кубинское песо</string>
+    <string name="cve_currency" translatable="false">Эскудо Кабо-Верде</string>
+    <string name="djf_currency" translatable="false">Франк Джибути</string>
+    <string name="dop_currency" translatable="false">Доминиканское песо</string>
+    <string name="dzd_currency" translatable="false">Алжирский динар</string>
+    <string name="egp_currency" translatable="false">Египетский фунт</string>
+    <string name="ern_currency" translatable="false">Эритрейская накфа</string>
+    <string name="etb_currency" translatable="false">Эфиопский быр</string>
+    <string name="fjd_currency" translatable="false">Доллар Фиджи</string>
+    <string name="fkp_currency" translatable="false">Фунт Фолклендских островов</string>
+    <string name="gel_currency" translatable="false">Грузинский лари</string>
+    <string name="ggp_currency" translatable="false">Гернсийский фунт</string>
+    <string name="ghs_currency" translatable="false">Ганский седи</string>
+    <string name="gip_currency" translatable="false">Гибралтарский фунт</string>
+    <string name="gmd_currency" translatable="false">Гамбийский даласи</string>
+    <string name="gnf_currency" translatable="false">Гвинейский франк</string>
+    <string name="gtq_currency" translatable="false">Гватемальский кетсаль</string>
+    <string name="gyd_currency" translatable="false">Гайанский доллар</string>
+    <string name="hnl_currency" translatable="false">Гондурасская лемпира</string>
+    <string name="htg_currency" translatable="false">Гаитянский гурд</string>
+    <string name="imp_currency" translatable="false">Фунт Острова Мэн</string>
+    <string name="iqd_currency" translatable="false">Иракский динар</string>
+    <string name="irr_currency" translatable="false">Иранский риал</string>
+    <string name="jep_currency" translatable="false">Джерсийский фунт</string>
+    <string name="jmd_currency" translatable="false">Ямайский доллар</string>
+    <string name="jod_currency" translatable="false">Иорданский динар</string>
+    <string name="kes_currency" translatable="false">Кенийский шиллинг</string>
+    <string name="kgs_currency" translatable="false">Киргизский сом</string>
+    <string name="khr_currency" translatable="false">Камбоджийский риель</string>
+    <string name="kmf_currency" translatable="false">Франк Комор</string>
+    <string name="kpw_currency" translatable="false">Северокорейская вона</string>
+    <string name="kwd_currency" translatable="false">Кувейтский динар</string>
+    <string name="kyd_currency" translatable="false">Доллар Каймановых Островов</string>
+    <string name="kzt_currency" translatable="false">Казахстанский тенге</string>
+    <string name="lak_currency" translatable="false">Лаосский кип</string>
+    <string name="lbp_currency" translatable="false">Ливанский фунт</string>
+    <string name="lkr_currency" translatable="false">Шри-ланкийская рупия</string>
+    <string name="lrd_currency" translatable="false">Либерийский доллар</string>
+    <string name="lsl_currency" translatable="false">Лоти Лесото</string>
+    <string name="ltl_currency" translatable="false">Литовский лит</string>
+    <string name="lvl_currency" translatable="false">Латвийский лат</string>
+    <string name="lyd_currency" translatable="false">Ливийский динар</string>
+    <string name="mad_currency" translatable="false">Марокканский дирхам</string>
+    <string name="mdl_currency" translatable="false">Молдавский лей</string>
+    <string name="mga_currency" translatable="false">Малагасийский ариари</string>
+    <string name="mkd_currency" translatable="false">Македонский денар</string>
+    <string name="mmk_currency" translatable="false">Мьянманский кьят</string>
+    <string name="mnt_currency" translatable="false">Монгольский тугрик</string>
+    <string name="mop_currency" translatable="false">Патака Макао</string>
+    <string name="mro_currency" translatable="false">Мавританская угия</string>
+    <string name="mur_currency" translatable="false">Маврикийская рупия</string>
+    <string name="mvr_currency" translatable="false">Мальдивская руфия</string>
+    <string name="mwk_currency" translatable="false">Малавийская квача</string>
+    <string name="mzn_currency" translatable="false">Мозамбикский метикал</string>
+    <string name="nad_currency" translatable="false">Доллар Намибии</string>
+    <string name="ngn_currency" translatable="false">Нигерийская найра</string>
+    <string name="nio_currency" translatable="false">Никарагуанская кордоба</string>
+    <string name="npr_currency" translatable="false">Непальская рупия</string>
+    <string name="omr_currency" translatable="false">Оманский риал</string>
+    <string name="pab_currency" translatable="false">Панамский бальбоа</string>
+    <string name="pen_currency" translatable="false">перуанский соль</string>
+    <string name="pgk_currency" translatable="false">кина Папуа – Новой Гвинеи</string>
+    <string name="pkr_currency" translatable="false">Пакистанская рупия</string>
+    <string name="pyg_currency" translatable="false">Парагвайский гуарани</string>
+    <string name="qar_currency" translatable="false">Катарский риал</string>
+    <string name="rsd_currency" translatable="false">Сербский динар</string>
+    <string name="rwf_currency" translatable="false">Франк Руанды</string>
+    <string name="sar_currency" translatable="false">Саудовский риял</string>
+    <string name="sbd_currency" translatable="false">Доллар Соломоновых Островов</string>
+    <string name="scr_currency" translatable="false">Сейшельская рупия</string>
+    <string name="sdg_currency" translatable="false">Суданский фунт</string>
+    <string name="shp_currency" translatable="false">Фунт Святой Елены</string>
+    <string name="sll_currency" translatable="false">Сьерра-леонский леоне</string>
+    <string name="sos_currency" translatable="false">Сомалийский шиллинг</string>
+    <string name="srd_currency" translatable="false">Суринамский доллар</string>
+    <string name="std_currency" translatable="false">Добра Сан-Томе и Принсипи</string>
+    <string name="svc_currency" translatable="false">Сальвадорский колон</string>
+    <string name="syp_currency" translatable="false">Сирийский фунт</string>
+    <string name="szl_currency" translatable="false">Свазилендский лилангени</string>
+    <string name="tjs_currency" translatable="false">Таджикский сомони</string>
+    <string name="tmt_currency" translatable="false">Туркменский манат</string>
+    <string name="tnd_currency" translatable="false">Тунисский динар</string>
+    <string name="top_currency" translatable="false">Паанга</string>
+    <string name="ttd_currency" translatable="false">Доллар Тринидада и Тобаго</string>
+    <string name="twd_currency" translatable="false">Новый тайваньский доллар</string>
+    <string name="tzs_currency" translatable="false">Танзанийский шиллинг</string>
+    <string name="uah_currency" translatable="false">Украинская гривна</string>
+    <string name="ugx_currency" translatable="false">Угандийский шиллинг</string>
+    <string name="uyu_currency" translatable="false">Уругвайское песо</string>
+    <string name="uzs_currency" translatable="false">Узбекский сум</string>
+    <string name="vef_currency" translatable="false">Венесуэльский боливар</string>
+    <string name="vnd_currency" translatable="false">Вьетнамский донг</string>
+    <string name="vuv_currency" translatable="false">Вануатский вату</string>
+    <string name="wst_currency" translatable="false">Самоанская тала</string>
+    <string name="xaf_currency" translatable="false">Центральноафриканский франк КФА</string>
+    <string name="xag_currency" translatable="false">Серебро</string>
+    <string name="xau_currency" translatable="false">Золото</string>
+    <string name="xcd_currency" translatable="false">Восточнокарибский доллар</string>
+    <string name="xdr_currency" translatable="false">Специальные права заимствования</string>
+    <string name="xof_currency" translatable="false">Западноафриканский франк КФА</string>
+    <string name="xpf_currency" translatable="false">Тихоокеанский франк</string>
+    <string name="yer_currency" translatable="false">Йеменский риал</string>
+    <string name="zmk_currency" translatable="false">Замбийская квача</string>
+    <string name="zmw_currency" translatable="false">Замбийская квача</string>
+    <string name="zwl_currency" translatable="false">Доллар Зимбабве</string>
+
+
+    <string name="change_day_night">Change theme</string>
+    <string name="share">Share</string>
+    <string name="rating_review">Rating/Review</string>
+    <string name="contact_email">Contact us</string>
+    <string name="buy_pro_version">Upgrade - remove ads</string>
+
+    <string name="email_contact_subject">Android app support</string>
+    <string name="email_contact_enter_text">Enter text</string>
+    <string name="email_contact_android_send">Sended from Android</string>
+
+    <string name="currencies">Currencies</string>
+    <string name="favorite">Favorite</string>
+    
+    <string name="choose_currency">Choose currency</string>
+    
+    <string name="chart">Chart</string>
+
+    <string name="main">Main</string>
+
+    <string name="currency_line_count">Number of currencies</string>
+
+    <string name="currency_two_lines">2 Currencies</string>
+    <string name="currency_three_lines">3 Currencies</string>
+    <string name="currency_four_lines">4 Currencies</string>
+
+    <string name="no_internet_first_launch">Need internet for first launch</string>
+</resources>

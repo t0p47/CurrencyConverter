@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.t0p47.currencyconverter.view.main.MainFragment"
+        android:label="@string/main"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_selectCurrencyFragment"
+            app:destination="@id/selectCurrencyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_chartFragment"
+            app:destination="@id/chartFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_linesDialogFragment"
+            app:destination="@id/linesDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectCurrencyFragment"
+        android:name="com.t0p47.currencyconverter.view.select_currency.SelectCurrencyFragment"
+        android:label="@string/choose_currency"
+        tools:layout="@layout/select_currency_fragment" />
+    <fragment
+        android:id="@+id/chartFragment"
+        android:name="com.t0p47.currencyconverter.view.chart.ChartFragment"
+        android:label="@string/chart"
+        tools:layout="@layout/chart_fragment" />
+    <dialog
+        android:id="@+id/linesDialogFragment"
+        android:name="com.t0p47.currencyconverter.view.dialog.LinesDialogFragment"
+        android:label="@string/currencies" />
+</navigation>

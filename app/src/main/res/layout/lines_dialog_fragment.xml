@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryLightColor"
+        android:minWidth="280dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currency_line_count"
+            android:textSize="18sp"
+            android:textColor="@color/buttonColor"
+            android:layout_marginTop="6dp"
+            android:textAlignment="gravity"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/btnTwoLines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currency_two_lines"
+            android:textColor="@color/buttonColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeader"/>
+
+        <Button
+            android:id="@+id/btnThreeLines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currency_three_lines"
+            android:textColor="@color/buttonColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnTwoLines"/>
+
+        <Button
+            android:id="@+id/btnFourLines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currency_four_lines"
+            android:textColor="@color/buttonColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnThreeLines"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

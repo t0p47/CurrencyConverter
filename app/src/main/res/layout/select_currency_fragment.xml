@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryLightColor"
+        tools:context=".view.select_currency.SelectCurrencyFragment">
+
+        <ImageView
+            android:id="@+id/imgRecentOne"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            tools:src="@mipmap/eur"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvRecentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="EUR"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imgRecentOne"
+            app:layout_constraintTop_toBottomOf="@id/imgRecentOne"/>
+
+        <ImageView
+            android:id="@+id/imgRecentTwo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="32dp"
+            tools:src="@mipmap/eur"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/imgRecentOne"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRecentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="EUR"
+            app:layout_constraintStart_toStartOf="@id/imgRecentTwo"
+            app:layout_constraintEnd_toEndOf="@id/imgRecentTwo"
+            app:layout_constraintTop_toBottomOf="@id/imgRecentOne"/>
+
+        <ImageView
+            android:id="@+id/imgRecentThree"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="32dp"
+            tools:src="@mipmap/eur"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/imgRecentTwo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRecentThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="EUR"
+
+            app:layout_constraintStart_toStartOf="@id/imgRecentThree"
+            app:layout_constraintEnd_toEndOf="@id/imgRecentThree"
+            app:layout_constraintTop_toBottomOf="@id/imgRecentOne"/>
+
+        <ImageView
+            android:id="@+id/imgRecentFour"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="32dp"
+            tools:src="@mipmap/eur"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/imgRecentThree"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRecentFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="EUR"
+            app:layout_constraintStart_toStartOf="@id/imgRecentFour"
+            app:layout_constraintEnd_toEndOf="@id/imgRecentFour"
+            app:layout_constraintTop_toBottomOf="@id/imgRecentOne"/>
+        
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/recentCurrencyGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="tvRecentOne, imgRecentOne,
+            tvRecentTwo, imgRecentTwo, tvRecentThree, imgRecentThree,  tvRecentFour, imgRecentFour"/>
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCurrencies"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvRecentOne"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:clipToPadding="false"
+            android:paddingBottom="50dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
