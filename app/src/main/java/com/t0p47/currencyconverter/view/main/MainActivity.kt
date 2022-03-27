@@ -6,14 +6,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.t0p47.currencyconverter.R
 import com.t0p47.currencyconverter.ads.AdsController
 import com.t0p47.currencyconverter.databinding.ActivityMainBinding
 import com.t0p47.currencyconverter.extension.DiActivity
-import com.t0p47.currencyconverter.extension.injectSharedViewModel
 import com.t0p47.currencyconverter.extension.injectViewModel
 import com.t0p47.currencyconverter.factory.ViewModelFactory
 import com.t0p47.currencyconverter.inapp_purchase.BillingManager
@@ -75,13 +73,13 @@ class MainActivity : DiActivity() {
     }
 
     private fun observeLiveData(){
-        billingManager.purchaseUpdateEvent.observe(this, { purchase ->
+        billingManager.purchaseUpdateEvent.observe(this) { purchase ->
 
             Log.d("LOG_TAG", "MainActivity: observeLiveData: purchase: $purchase")
-            if(purchase.sku == "update_to_professional"){
+            if (purchase.sku == "update_to_professional") {
                 adsController.disableAds()
             }
-        })
+        }
     }
 
     override fun onResume() {

@@ -13,13 +13,13 @@ android {
         }
     }
 
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
 
     defaultConfig {
         applicationId "com.t0p47.currencyconverter"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -124,9 +124,9 @@ dependencies {
     kapt 'com.google.dagger:dagger-android-processor:2.35.1'
 
     //NavigationComponent
-    implementation 'androidx.preference:preference:1.1.1'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'

@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.squareup.moshi.JsonDataException
 import com.t0p47.currencyconverter.model.CurrencyLine
 import com.t0p47.currencyconverter.model.enums.CurrencyType
 import com.t0p47.currencyconverter.network.Api
@@ -12,7 +13,6 @@ import com.t0p47.currencyconverter.repository.currency.CurrencyRepository
 import com.t0p47.currencyconverter.room.entity.CurrencyEntity
 import com.t0p47.currencyconverter.room.entity.CurrencyModelEntity
 import com.t0p47.currencyconverter.utils.PreferenceHelper
-import com.t0p47.currencyconverter.utils.PreferenceHelper.Companion.RECENT_CURRENCY_TYPE_KEY
 import com.t0p47.currencyconverter.utils.SingleLiveEvent
 import com.t0p47.currencyconverter.utils.TAG
 import kotlinx.coroutines.launch
@@ -23,7 +23,7 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(private val currencyRepository: CurrencyRepository, private val sharPref: PreferenceHelper) : ViewModel() {
 
     //TODO: Wrong place
-    private val apiKey = "4438e0d7a2c3a4de1545d68c119f2fc5"
+    private val apiKey = "3c400d406d943382ee5fac6eef30bf06"
 
     private val _watchedCurrencyTypes = MutableLiveData<List<CurrencyLine>>()
     val watchedCurrencyTypes: LiveData<List<CurrencyLine>>
@@ -262,6 +262,7 @@ class MainViewModel @Inject constructor(private val currencyRepository: Currency
         apiParams["access_key"] = apiKey
 
         try{
+            Log.d(TAG, "MainViewModel: getLatestCurrencies: try: $apiParams")
             val latestCurrency = Api.retrofitService.getLatestCurrency(apiParams)
 
             if(sharPref.checkRefreshRateTime()){
@@ -441,6 +442,8 @@ class MainViewModel @Inject constructor(private val currencyRepository: Currency
             Log.d("LOG_TAG","MainViewModel: initCurrencies: IOEx: ${ex.message}")
         }catch (ex: HttpException){
             Log.d("LOG_TAG","MainViewModel: initCurrencies: HttpEx: ${ex.message}")
+        }catch (ex: JsonDataException){
+            Log.d("LOG_TAG","MainViewModel: initCurrencies: jsonDataException: ${ex.message}")
         }
     }
 
@@ -467,7 +470,7 @@ class MainViewModel @Inject constructor(private val currencyRepository: Currency
 
             val inputCurrencyEntity = currencyRepository.localDataSource.getCurrencyEntityByCurrencyType(inputCurrencyType)
 
-            Log.d("LOG_TAG","MainViewModel: initCurrencies: inputCurrencyEntity: $inputCurrencyEntity")
+            Log.d("LOG_TAG","MainViewModel: initCurrencies: inputCurrencyEntity: $inputCurrencyEntity, inputCurrencyType: $inputCurrencyType")
 
             this@MainViewModel.inputCurrencyEntity = inputCurrencyEntity
 
@@ -498,6 +501,7 @@ class MainViewModel @Inject constructor(private val currencyRepository: Currency
             val apiParams = HashMap<String,String>()
             apiParams["access_key"] = apiKey
 
+            Log.d(TAG, "MainViewModel: downloadLatestRate: $apiParams")
             val latestCurrency = Api.retrofitService.getLatestCurrency(apiParams)
             Log.d(TAG, "MainViewModel: downloadLatestRate: $latestCurrency")
 

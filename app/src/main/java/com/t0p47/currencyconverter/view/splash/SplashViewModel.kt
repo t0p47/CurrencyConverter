@@ -4,12 +4,14 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.squareup.moshi.JsonDataException
 import com.t0p47.currencyconverter.model.enums.CurrencyType
 import com.t0p47.currencyconverter.network.Api
 import com.t0p47.currencyconverter.repository.currency.CurrencyRepository
 import com.t0p47.currencyconverter.room.entity.CurrencyEntity
 import com.t0p47.currencyconverter.utils.PreferenceHelper
 import com.t0p47.currencyconverter.utils.SingleLiveEvent
+import com.t0p47.currencyconverter.utils.TAG
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
@@ -37,6 +39,7 @@ class SplashViewModel @Inject constructor(private val sharPref: PreferenceHelper
             apiParams["access_key"] = apiKey
 
             try{
+                Log.d(TAG, "MainViewModel: initCurrenciesFirstTime: $apiParams")
                 val latestCurrency = Api.retrofitService.getLatestCurrency(apiParams)
 
                 if(sharPref.checkRefreshRateTime()){
@@ -219,6 +222,9 @@ class SplashViewModel @Inject constructor(private val sharPref: PreferenceHelper
             }catch (ex: HttpException){
                 _currenciesLoaded.postValue(false)
                 Log.d("LOG_TAG","MainViewModel: initCurrencies: HttpEx: ${ex.message}")
+            }catch (ex: JsonDataException){
+                Log.d("LOG_TAG","MainViewModel: initCurrencies: jsonDataException: ${ex.message}")
+                _currenciesLoaded.postValue(false)
             }
         }
 

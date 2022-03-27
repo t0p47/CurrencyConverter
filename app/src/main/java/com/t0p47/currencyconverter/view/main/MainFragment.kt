@@ -59,6 +59,9 @@ class MainFragment : Fragment(), FragmentInjectable, View.OnClickListener {
         navViewModel = ViewModelProvider(requireActivity()).get(NavViewModel::class.java)
 
         val inputCurrencyType = sharPref.restoreInputCurrencyType()
+
+        Log.d(TAG,"MainFragment: onCreateView: inputCurrencyType: $inputCurrencyType")
+
         binding.smallName = inputCurrencyType.currencyNameRes
         binding.bigName = inputCurrencyType.name
         //binding.imgCurrency.setImageResource(resources.getIdentifier(it.name.toLowerCase(), "mipmap", context?.packageName))

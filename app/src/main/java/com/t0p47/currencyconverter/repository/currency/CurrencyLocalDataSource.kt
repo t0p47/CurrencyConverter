@@ -1,12 +1,10 @@
 package com.t0p47.currencyconverter.repository.currency
 
-import android.util.Log
 import com.t0p47.currencyconverter.model.enums.CurrencyType
 import com.t0p47.currencyconverter.room.dao.CurrencyDao
 import com.t0p47.currencyconverter.room.dao.CurrencyModelDao
 import com.t0p47.currencyconverter.room.entity.CurrencyEntity
 import com.t0p47.currencyconverter.room.entity.CurrencyModelEntity
-import com.t0p47.currencyconverter.utils.TAG
 
 class CurrencyLocalDataSource(private val currencyDao: CurrencyDao, private val currencyModelDao: CurrencyModelDao) {
 
