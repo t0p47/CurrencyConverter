@@ -50,7 +50,7 @@ android {
             versionName versionBuild + '-beta'
             versionCode = versionCodeName
             minSdkVersion 21
-            targetSdkVersion 30
+            targetSdkVersion 31
             multiDexEnabled true
             signingConfig signingConfigs.beta_key_config
         }
@@ -60,7 +60,7 @@ android {
             versionName versionBuild
             versionCode = versionCodeName
             minSdkVersion 21
-            targetSdkVersion 30
+            targetSdkVersion 31
             multiDexEnabled true
             signingConfig signingConfigs.market_key_config
         }
